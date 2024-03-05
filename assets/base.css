@@ -3,7 +3,7 @@
 :root {
     --font: "DM Sans", sans-serif;
     --color-one:#FF8484 ;
-    --color-two: ;
+    --color-two: #F7D9C4;
     --color-bg1: #DCE8EB;
     --color-bg2: #EFEFEF;
     --color-bg3: #DCE8EB;
@@ -18,4 +18,35 @@ body{
 }
 .a{
     text-decoration: none; /* Ghi đè lên thuộc tính text-decoration của thẻ a */
+}
+
+.buton{
+    color: var(--color-text);
+    background: white;
+    border: 2px solid white;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.header .inner-icon-mobi{
+    display: none;
+}
+
+@media (max-width:991px) {
+    .header .inner-icon-mobi{
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    .header .inner-menu{
+        display: none;
+    }
+    .header .inner-social{
+        display: none;
+    }
+    .header{
+        padding: 15px 20px;
+    }
 }
